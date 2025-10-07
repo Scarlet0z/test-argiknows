@@ -51,8 +51,8 @@ body, html {
 }
 
 .logo-title h2 {
-  margin: 0;
-  font-size: 30px;
+  margin-left: -25px;
+  font-size: 25px;
   font-weight: bold;
   color: #4b6c2a;
   align-items: center;

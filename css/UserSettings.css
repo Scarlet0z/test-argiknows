@@ -56,7 +56,7 @@ body, html {
   
 }
 .logo-title h2 {
-  margin: 0px;
+  margin-left: -25px;
   font-size: 25px;
   font-weight: bold;
   color: #4b6c2a;
@@ -66,8 +66,6 @@ body, html {
 .top-actions {
   display: flex;
   align-items: center;
-  gap:10px;
-  /*object-fit: contain; */
 
   /*gap: 45px;
   height: 70px;

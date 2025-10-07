@@ -32,7 +32,7 @@ body, html {
 .logo-container {
   display: flex;
   align-items: center;
-  margin-left: 20px;
+  margin: -20px;
   
   
 }
@@ -40,9 +40,9 @@ body, html {
 .logo {
   height: 70px;
   width: auto;
-  border-radius: 0%;
+  border-radius: 50%;
   object-fit: contain;
-  margin: -14px -50px 0px -50px
+ /* margin: -14px -50px 0px -50px*/
 
   
 }
@@ -57,7 +57,7 @@ body, html {
 }
 .logo-title h2 {
   margin: 0px;
-  font-size: 30px;
+  font-size: 25px;
   font-weight: bold;
   color: #4b6c2a;
   align-items: center;
@@ -66,9 +66,9 @@ body, html {
 .top-actions {
   display: flex;
   align-items: center;
-  gap:45px;
-  object-fit: contain;
-  
+  gap:10px;
+  /*object-fit: contain; */
+
   /*gap: 45px;
   height: 70px;
   width: auto;
@@ -76,8 +76,10 @@ body, html {
   object-fit: contain;*/
 }
 
+
 .icon-link {
   display: inline-block;
+ 
 }
 .icon-btn {
   width: 40px;
@@ -114,11 +116,8 @@ body, html {
 .card h2 {
   margin-bottom: 15px;
   font-size: 1.2rem;
+  
 }
-.icon {
-  margin-right: 5px;
-}
-
 /* Form */
 .form-row {
   display: flex;

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>User Settings | AgriKnows</title>
+  <link rel="stylesheet" href="/css/UserSettings.css" />
+</head>
+<body>
+  <div class="dashboard">
+
+    <!-- Header -->
+  <header class="top-bar">
+    <div class="logo-container">
+      <div class="top-actions">
+        <button class="icon-btn" onclick="window.location.href='home.html'">
+          <img src="/image/LOGO.png" class="logo" alt="AgriKnows Logo" />
+        </button>
+        <h2>AGRIKNOWS</h2>
+      </div>
+     
+      
+    </div>
+    <div class="profile">
+      <img src="/icons/profile.png" class="profile-icon" alt="Profile" />
+    </div>
+  </header>
+
+  <main class="settings-container">
+    <h1>User Settings</h1>
+
+    <!-- Personal Information -->
+    <section class="card">
+      <h2><span class="icon">👤</span> Personal Information</h2>
+      <div class="form-row">
+        <label>Username</label>
+        <input type="text" value="Juan Dela Cruz" />
+      </div>
+      <div class="form-row">
+        <label>Email</label>
+        <input type="email" value="juandelacruz@gmail.com" />
+      </div>
+      <div class="form-row">
+        <label>Language</label>
+        <select>
+          <option>English</option>
+          <option>Filipino</option>
+        </select>
+      </div>
+    </section>
+
+    <!-- Security -->
+    <section class="card">
+      <h2><span class="icon">🛡️</span> Security</h2>
+      <div class="form-row">
+        <label>Current Password</label>
+        <input type="password" value="**********" />
+      </div>
+      <div class="form-row">
+        <label>New Password</label>
+        <input type="password" />
+      </div>
+      <div class="form-row">
+        <label>Confirm Password</label>
+        <input type="password" />
+      </div>
+      <button class="btn">Save Password</button>
+    </section>
+
+    <!-- Appearance -->
+    <section class="card">
+      <h2><span class="icon">🎨</span> Appearance</h2>
+      <div class="form-row">
+        <label>Dark Mode</label>
+        <label class="switch">
+          <input type="checkbox" id="darkModeToggle" />
+          <span class="slider"></span>
+        </label>
+      </div>
+    </section>
+
+    <button class="btn save-btn">SAVE</button>
+  </main>
+</div>
+  <script src="/js/UserSettings.js"></script>
+</body>
+</html>

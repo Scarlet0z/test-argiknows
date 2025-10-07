@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AgriKnows Homepage</title>
+  <link rel="stylesheet" href="/css/home.css" />
+</head>
+<body>
+  <div class="dashboard">
+
+    <!-- Header -->
+    <header class="top-bar">
+      <div class="logo-container">
+        <img src="/image/LOGO.png" class="logo" alt="AgriKnows Logo">
+        <h2>AGRIKNOWS</h2>
+      </div>
+
+      <div class="top-actions">
+        <div class="toggle-switch">
+          <input type="checkbox" id="graphToggle">
+          <label for="graphToggle"></label>
+        </div>
+      
+        <span class="graph-mode-text">Graph Mode</span>
+
+        <button class="icon-btn" onclick="window.location.href='UserSettings.html'">
+          <img src="/icons/profile.png" class="profile-icon" alt="Profile">
+        </button>
+      </div>
+      
+    </header>
+
+    <!-- Control Panel -->
+    <section class="controls">
+      <div class="control-group">
+        <label for="deviceInput">Device</label>
+        <div class="readonly-field">Device 1</div>
+      </div>
+
+      <div class="control-group">
+        <label for="dateInput">Date</label>
+        <input type="date" id="dateInput" value="2025-11-20">
+      </div>
+
+      <div class="control-group">
+        <label for="crop">Select Crop</label>
+        <select id="crop" onchange="checkAddNew(this)">
+          <option value="">-- Select Crop --</option>
+          <option value="corn">Corn</option>
+          <option value="rice">Rice</option>
+          <option value="wheat">Wheat</option>
+          <option value="tomato">Tomato</option>
+          <option value="lettuce">Lettuce</option>
+          <option value="addNew">➕ Add New Crop</option>
+        </select>
+      </div>
+    </section>
+
+    <!-- Sensors Section -->
+    <section class="sensors">
+      <div class="card temperature">
+        <img src="/icons/temp.png" class="icon" alt="Temperature Icon">
+        <div class="label">Temperature</div>
+        <div class="value">0°C</div>
+      </div>
+      <div class="card humidity">
+        <img src="/icons/humidity.png" class="icon" alt="Humidity Icon">
+        <div class="label">Humidity</div>
+        <div class="value">0%</div>
+      </div>
+      <div class="card soil">
+        <img src="/icons/soil.png" class="icon" alt="Soil Moisture Icon">
+        <div class="label">Soil Moisture</div>
+        <div class="value">0%</div>
+      </div>
+      <div class="card light">
+        <img src="/icons/light.png" class="icon" alt="Light Icon">
+        <div class="label">Light</div>
+        <div class="value">0 <span class="unit">PAR/μmol</span></div>
+      </div>
+      <div class="card ph">
+        <img src="/icons/pHlevel.png" class="icon" alt="Ph Icon">
+        <div class="label">Ph level</div>
+        <div class="value">0</div>
+      </div>
+    </section>
+
+    <!-- History Section -->
+    <section class="history-section">
+      <h2>HISTORY</h2>
+      <p class="no-history">No history data available.</p>
+    </section>
+
+  </div>
+
+  <script src="/js/dark-mode.js"></script>
+</body>
+</html>
